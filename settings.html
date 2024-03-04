@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="Images/LOGO-ICON.svg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Rate It</title>
+</head>
+<body>
+    <div class="overview">
+        <div class="overview-sidebar">
+            <div class="overview-logo">
+                <img src="Images/LOGO.svg" alt="" onclick="window.location.href = 'index.html' ">
+            </div>
+            <div class="mobile-logo">
+                <img src="Images/LOGO-ICON.svg" alt="" onclick="window.location.href = 'index.html' ">
+            </div>
+            <ul>
+                <li>
+                    <a href="overview.html">
+                        <i class='bx bxs-dashboard'></i>
+                        <span>Overview</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="team.html">
+                        <i class='bx bxl-microsoft-teams'></i>
+                        <span>Team</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="membership.html">
+                        <i class='bx bx-credit-card'></i>
+                        <span>Membership</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class='bx bx-user'></i>
+                        <span>My Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="active" href="settings.html">
+                        <i class='bx bxs-cog'></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="overview-container">
+            <h1>Settings</h1>
+            <div class="settings-container">
+                <div class="settings-box">
+                    <div id="profile">
+                        <h2>Personal Information</h2>
+                        <div class="info">
+                            <label for="firstName">First Name : </label>
+                            <span id="firstName">Youssef</span>
+                        </div>
+                        <div class="info">
+                            <label for="lastName">Last Name : </label>
+                            <span id="lastName">Mohammed</span>
+                        </div>
+                        <div class="info">
+                            <label for="email">Email address : </label>
+                            <span id="email">ixyoussef46@gmail.com</span>
+                        </div>
+                        <div class="info">
+                            <label for="phone">Phone : </label>
+                            <span id="phone">+201096030644</span>
+                        </div>
+                        <div class="info">
+                            <label for="bio">Bio : </label>
+                            <span id="bio">Team Manager</span>
+                        </div>
+                        <button id="editButton">Edit</button>
+                    </div>
+                </div>
+                <div class="security-settings">
+                    <h2>Security</h2>
+                    <div class="setting-item">
+                        <label for="email">Email address</label>
+                        <div style="display: flex; gap: 20px; align-items: center;">
+                            <input type="email" id="email" value="ixyoussef46@gmail.com">
+                            <button id="editEmail" onclick="editEmail()">Edit</button>
+                        </div>
+                    </div>
+                    <div class="setting-item two">
+                        <label for="password">Password</label>
+                        <button id="changePass" onclick="editPassword()">Change Password</button>
+                    </div>
+                    <div class="setting-item three">
+                        <label for="two-step">2-Step Verification</label>
+                        <label class="switch">
+                            <input type="checkbox" id="two-step">
+                            <span class="slider round"></span>
+                        </label>
+                        <div id="modal" class="modal" style="display: none;">
+                            <div class="modal-content">
+                                <span class="close-button two">&times;</span>
+                                <p>2-Step Verification is Activated now !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="emailPopup" class="popuptwo" style="display: none;">
+                    <p>Email Successfully Changed !</p>
+                    <button id="closePopupp" onclick="closePopup()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/last.js"></script>
+    <script src="JS/six.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="Images/LOGO-ICON.svg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Rate It</title>
+</head>
+<body>
+    <div class="overview">
+        <div class="overview-sidebar">
+            <div class="overview-logo">
+                <img src="Images/LOGO.svg" alt="" onclick="window.location.href = 'index.html' ">
+            </div>
+            <div class="mobile-logo">
+                <img src="Images/LOGO-ICON.svg" alt="" onclick="window.location.href = 'index.html' ">
+            </div>
+            <ul>
+                <li>
+                    <a href="overview.html">
+                        <i class='bx bxs-dashboard'></i>
+                        <span>Overview</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="team.html">
+                        <i class='bx bxl-microsoft-teams'></i>
+                        <span>Team</span>
+                    </a>
+                </li>
+                <li>
+                    <a calss="active" href="membership.html">
+                        <i class='bx bx-credit-card'></i>
+                        <span>Membership</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="active" href="profile.html">
+                        <i class='bx bx-user'></i>
+                        <span>My Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class='bx bxs-cog'></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="overview-container">
+            <div class="overview-header two">
+                <div class="overview-search">
+                    <i class='bx bx-search'></i>
+                    <input type="search" placeholder="Search">
+                </div>
+                <div class="overview-profile">
+                    <div class="overview-myprofile" onclick="toggleDropdownTwo()">
+                        <img src="Images/Me.jpg" alt="">
+                        <div id="dropdownTwo" class="dropdown-myprofile">
+                            <a href="profile.html">
+                                <i class='bx bx-user'></i>
+                                <span>My Profile</span>
+                            </a>
+                            <a href="settings.html">
+                                <i class='bx bx-cog'></i>
+                                <span>Settings</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>My Profile</h1>
+            <div class="profile-content">
+                <div class="profile-grid-container">
+                    <div class="profile-box">
+                        <div class="profile-text-content">
+                            <div class="profile-image">
+                                <img src="Images/Me.jpg" alt="">
+                            </div>
+                            <div class="profile-text">
+                                <h2>Youssef Mohammed</h2>
+                                <p class="job-title">FrontEnd Developer</p>
+                                <span class="freelance"><i class='bx bx-user-check'></i>Freelancer</span>
+                                <div class="profile-btn">
+                                    <a href="#">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-text-content-two">
+                            <div class="profile-text-boxs">
+                                <div class="profile-text-box">
+                                    <h3>Avilablilty :</h3>
+                                    <span>Full Time ( 42HR/WK )</span>
+                                </div>
+                                <div class="profile-text-box">
+                                    <h3>Age :</h3>
+                                    <span>18 Years</span>
+                                </div>
+                                <div class="profile-text-box">
+                                    <h3>Location :</h3>
+                                    <span>Mansoura, EGY</span>
+                                </div>
+                                <div class="profile-text-box">
+                                    <h3>Exp Years :</h3>
+                                    <span>One Year</span>
+                                </div>
+                            </div>
+                            <div class="my-profile-social">
+                                <i class='bx bxl-facebook-square'></i>
+                                <i class='bx bxl-twitter'></i>
+                                <i class='bx bxl-instagram'></i>
+                                <i class='bx bxl-linkedin-square'></i>
+                                <i class='bx bxl-github'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"  class="active-btn" data-content=".oneP">About</a>
+                    </li>
+                    <li>
+                        <a href="#" data-content=".twoP">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#" data-content=".threeP">Reviews</a>
+                    </li>
+                </ul>
+                <div class="profile-ul-content">
+                    <div class="about-content oneP">
+                        <div class="about-content-header">
+                            <h2>Bio</h2>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                        <div class="about-content-wrapper">
+                            <div class="about-content-content">
+                                <h3>I'm A FrontEnd Developer With One Year Experience, And I'm A Computer Science Student In Mansoura University. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis similique unde obcaecati quis fugiat ducimus quam, necessitatibus velit!</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content-box-two twoP">
+                        <div class="skills-box">
+                            <h2>My Skills</h2>
+                            <div class="skills-box-text">
+                                <div class="skills-box-container">
+                                    <span>UI</span>
+                                    <span>UX</span>
+                                    <span>Figma</span>
+                                    <span>PhotoShop</span>
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Bootstrap</span>
+                                    <span>C#</span>
+                                </div>
+                                <h2>Languages</h2>
+                                <div class="skills-box-container">
+                                    <span><img src="Images/AR.png" alt=""> Arabic</span>
+                                    <span><img src="Images/EN.png" alt=""> English</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content-box-three threeP">
+                        <img src="Images/Soon.svg" alt="">
+                        <h2>Cooming Soon</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/five.js"></script>
+</body>
+</html>
